@@ -1,0 +1,6 @@
+an interface inside a interface is known as Nested interface.
+interface cat{
+void print();
+interface meow{
+void speak(); }
+}
