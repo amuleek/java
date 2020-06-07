@@ -4,3 +4,5 @@ The ClassLoader works based on a set of operations given by the delegation model
 ClassLoader always follows the Delegation Hierarchy Principle.
 Whenever JVM comes across a class, it checks whether that class is already loaded or not.
 If the Class is already loaded in the method area then the JVM proceeds with execution.
+If the class is not present in the method area then the JVM asks the Java ClassLoader Sub-System to load that particular class, then ClassLoader sub-system hands over the control to Application ClassLoader.
+Application ClassLoader then delegates the request to Extension ClassLoader and the Extension ClassLoader in turn delegates the request to Bootstrap ClassLoader.
