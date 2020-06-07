@@ -1,1 +1,6 @@
 three principles of functionality
+1. Delegation Model: The Java Virtual Machine and the Java ClassLoader use an algorithm called the Delegation Hierarchy Algorithm to Load the classes into the Java file. 
+The ClassLoader works based on a set of operations given by the delegation model. They are:
+ClassLoader always follows the Delegation Hierarchy Principle.
+Whenever JVM comes across a class, it checks whether that class is already loaded or not.
+If the Class is already loaded in the method area then the JVM proceeds with execution.
